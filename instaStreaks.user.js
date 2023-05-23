@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Insta-Streaks v1.2a.
+// @name         Insta-Streaks v1.3
 // @description  Modify the fetch function to divert requests to SGS for country streak scripts.
 // @namespace    https://www.geoguessr.com/
-// @version      1.2a
+// @version      1.3
 // @author       echandler
 // @match        https://www.geoguessr.com/*
 // @run-at       document-start
