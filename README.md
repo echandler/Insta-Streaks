@@ -31,7 +31,7 @@ Make a new Tampermonkey script and paste this into it, changing what you think i
         customError: "Custom Error!",
         coordinatesObject: {
                       // The coordinates need to be [longitude, latitude] (x,y) NOT [latitude, longitude] (y,x).
-          "Los Vegas":[ 
+          "Las Vegas":[ 
                           [[-115.400392,36.454904],[-115.327485,35.810499],[-114.705262,36.17827]]
                       ],
           "Los Angeles":[
