@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Insta-Streaks v1.5
+// @name         Insta-Streaks v1.6
 // @description  Modify the fetch function to divert requests to SGS for country streak scripts.
-// @namespace    https://www.geoguessr.com/
-// @version      1.5
+// @namespace    Insta-Streaks
+// @version      1.6
 // @author       echandler
 // @match        https://www.geoguessr.com/*
 // @run-at       document-start
@@ -11,6 +11,7 @@
 // @updateURL    https://github.com/echandler/Insta-Streaks/raw/main/instaStreaks.user.js
 // @noframes
 // ==/UserScript==
+
 
 (function () {
     "use strict";
@@ -108,6 +109,8 @@
                                 : customResponce.response;
                         });
                     }
+                    
+                    window.fetch._prev.push(response);
 
                     return new Promise((res) =>
                         res({
@@ -150,6 +153,8 @@
                         });
                     }
 
+                    window.fetch._prev.push(response);
+
                     return new Promise((res1) =>
                         res1({
                             status: 200,
@@ -163,6 +168,7 @@
                 return _fetch.apply(window, args);
             };
         })();
+        window.fetch._prev = [];
     }
 
     unsafeWindow.eval(`(${injected.toString()})()`);
