@@ -1,3 +1,5 @@
+``⚠️`` Installing any script could get your account banned.
+
 # Insta-Streaks
 Makes country streak counters show the streak count instantaneously.
 
