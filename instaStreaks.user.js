@@ -173,3 +173,4 @@
 
     unsafeWindow.eval(`(${injected.toString()})()`);
 })();
+// Testing vscode.dev github integration by opening a remote repository and making a commmit.
